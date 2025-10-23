@@ -1,6 +1,17 @@
 # bahamut-api-proxy
 使用Netlify反向代理巴哈姆特api，辅助danmu_api项目直连获取巴哈姆特弹幕
 
+## 目录
+
+[一键部署](#一键部署)
+
+[Fork后部署](#Fork（复刻）后部署（推荐）)
+
+[手动创建仓库部署](#手动创建仓库部署（推荐）)
+
+[danmu_api弹幕项目的具体使用](#[danmu_api](https://github.com/huangxd-/danmu_api)弹幕项目的具体使用)
+
+
 ### 一键部署
 点击以下按钮即可将本项目快速部署到 Netlify：
 
@@ -58,4 +69,13 @@ github配置部分就到此结束了，恭喜你成功创建了一个netlify.tom
 <img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/2bf98c63-a37d-44e3-bb6c-c72bfd596347" />
 
 
+### [danmu_api](https://github.com/huangxd-/danmu_api)弹幕项目的具体使用
 
+#### 在我提pr，实现PROXY_URL环境变量的新功能后：
+使用`PROXY_URL`环境变量，值为`RP@你通过netlify获取的反代后的域名`
+
+示例：`PROXY_URL=RP@https://123.netlify.app`
+
+#### PROXY_URL还没有这个功能前：
+在你部署的平台找到worker.js文件，修改它将总共六个`https://api.gamer.com.tw`巴哈api地址替换为你通过netlify获取的反代后的地址
+<img width="1232" height="559" alt="image" src="https://github.com/user-attachments/assets/bfe3d79d-f0c1-40d3-af6e-a89499234f5a" />
