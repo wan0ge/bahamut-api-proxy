@@ -1,19 +1,29 @@
 # bahamut-api-proxy
 使用Netlify反向代理巴哈姆特api，实现danmu_api项目国内直连获取巴哈姆特弹幕，附带喂饭式教程🥰
-
+> 请不要过度宣传Netlify的反代功能
 ---
 
 ## 目录（点击跳转）
 
+[前置准备](#前置准备)
+
 [适合专业宝宝的极简教程](#适合专业宝宝的极简教程本来就很简单)
 
-[一键部署反代](#一键部署反代)
+[一键部署反代教程](#一键部署反代)
 
-[Fork后部署反代](#复刻后部署反代推荐)
+[Fork后部署反代教程](#复刻后部署反代推荐)
 
-[手动创建仓库部署反代](#手动创建仓库部署反代推荐)
-z
+[手动创建仓库部署反代教程](#手动创建仓库部署反代推荐)
+
 [danmu_api弹幕项目的具体使用](#danmu_api弹幕项目的具体使用)
+
+---
+
+## 前置准备
+
+- 一个 [GitHub](https://github.com/) 账号
+- 一个 [netlify](https://app.netlify.com/) 账号（可以使用 GitHub 登录）
+- 推荐使用[GitHub 中文化插件](https://greasyfork.org/zh-CN/scripts/435208-github-%E4%B8%AD%E6%96%87%E5%8C%96%E6%8F%92%E4%BB%B6)和[Netlify 汉化脚本](https://greasyfork.org/zh-CN/scripts/484197-netlify-%E6%B1%89%E5%8C%96%E8%84%9A%E6%9C%AC)油猴脚本
 
 ---
 
