@@ -1,5 +1,5 @@
 # bahamut-api-proxy
-使用Netlify反向代理巴哈姆特api，实现danmu_api项目国内直连获取巴哈姆特弹幕，附带喂饭式教程🥰
+使用Netlify反向代理巴哈姆特api，实现[danmu_api](https://github.com/huangxd-/danmu_api)项目国内直连获取巴哈姆特弹幕，附带喂饭式教程🥰
 > 请不要过度宣传Netlify的反代功能
 ---
 
