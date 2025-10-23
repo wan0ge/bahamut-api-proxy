@@ -60,9 +60,9 @@
 
 <img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/d5d378f0-94cd-4807-9750-2fad0f7365ae" />
 
-> ↑这个界面内容都可以随意
-
 <img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/69e05665-4304-4506-9119-03e13599e5d2" />
+
+> ↑这个界面内容都可以随意填
 
 2.然后开始创建netlify.toml配置文件
 
@@ -86,7 +86,7 @@
 
 > github配置部分就到此结束了，恭喜你成功创建了一个netlify配置文件🥳
 
-#### 4.打开[netlify](https://app.netlify.com/)使用github一键登录或者注册登录后导入我们刚刚创建的github仓库
+#### 4.打开[netlify](https://app.netlify.com/)使用github一键登录或者注册登录后导入我们刚刚创建/复刻的github仓库
 
 <img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/889dd9b2-3a35-457d-b44d-16a009415419" />
 
