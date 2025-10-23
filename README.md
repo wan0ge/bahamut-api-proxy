@@ -9,7 +9,7 @@
 
 [手动创建仓库部署](#手动创建仓库部署（推荐）)
 
-[danmu_api弹幕项目的具体使用](#[danmu_api](https://github.com/huangxd-/danmu_api)弹幕项目的具体使用)
+[danmu_api弹幕项目的具体使用](#danmu_api弹幕项目的具体使用)
 
 
 ### 一键部署
