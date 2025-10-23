@@ -22,6 +22,8 @@
 
 巴哈api为：`https://api.gamer.com.tw`
 
+> 使用方式请看：[danmu_api弹幕项目的具体使用](#danmu_api弹幕项目的具体使用)
+
 ---
 
 ## 一键部署反代
