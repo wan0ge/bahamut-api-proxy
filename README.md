@@ -18,7 +18,7 @@
 ---
 
 ## 适合专业宝宝的极简教程（本来就很简单）
-请看：[Netlify、Vercel反代网站 - AcoFork Blog](https://blog.2b2x.cn/posts/netlify-vercel-proxy/)
+请看：<a href="https://blog.2b2x.cn/posts/netlify-vercel-proxy/" target="_blank">Netlify、Vercel反代网站 - AcoFork Blog</a>
 
 巴哈api为：`https://api.gamer.com.tw`
 
