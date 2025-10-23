@@ -12,13 +12,13 @@
 [Fork后部署反代](#复刻后部署反代推荐)
 
 [手动创建仓库部署反代](#手动创建仓库部署反代推荐)
-
+z
 [danmu_api弹幕项目的具体使用](#danmu_api弹幕项目的具体使用)
 
 ---
 
 ## 适合专业宝宝的极简教程（本来就很简单）
-请看：<a href="https://blog.2b2x.cn/posts/netlify-vercel-proxy/" target="_blank" rel="noopener noreferrer">Netlify、Vercel反代网站 - AcoFork Blog</a>
+请看二叉树树佬博客教程：[Netlify、Vercel反代网站 - AcoFork Blog](https://blog.2b2x.cn/posts/netlify-vercel-proxy/)
 
 巴哈api为：`https://api.gamer.com.tw`
 
