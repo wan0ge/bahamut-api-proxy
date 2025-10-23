@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/*"
+  to = "https://api.gamer.com.tw/:splat"
+  status = 200
+  force = true
+  [redirects.headers]
+    User-Agent = "Anime/2.29.2 (7N5749MM3F.tw.com.gamer.anime; build:972; iOS 26.0.0) Alamofire/5.6.4"
+    Content-Type = "application/json"
