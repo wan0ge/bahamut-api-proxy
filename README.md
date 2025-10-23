@@ -115,15 +115,23 @@
 ## [danmu_api](https://github.com/huangxd-/danmu_api)弹幕项目的具体使用
 
 ### 在我提pr，实现PROXY_URL环境变量的新功能后：
-使用`PROXY_URL`环境变量，值为`RP@你通过netlify获取的反代后的域名`
+使用`PROXY_URL`环境变量使用，值为`RP@你通过netlify获取的反代后的域名`
 
 示例：`PROXY_URL=RP@https://123.netlify.app`
 
 ### PROXY_URL还没有这个功能前：
+方式一：
+
 在你部署的平台找到worker.js文件，修改它将总共六个`https://api.gamer.com.tw`巴哈api地址替换为你通过netlify获取的反代后的地址
 <img width="1232" height="559" alt="image" src="https://github.com/user-attachments/assets/bfe3d79d-f0c1-40d3-af6e-a89499234f5a" />
 
-这样配置后就实现了直连获取巴哈弹幕🥳另外现有的TMDB API也是支持直连的，巴哈姆特重度使用用户建议配置
+方式二：
+
+使用我提供的[worker.js](https://github.com/wan0ge/danmu_api/blob/bahamut-Temporary/danmu_api/worker.js)、[server.js](https://github.com/wan0ge/danmu_api/blob/bahamut-Temporary/danmu_api/server.js)文件替换掉你部署平台对应的文件，然后使用`PROXY_URL`环境变量使用，值为`RP@你通过netlify获取的反代后的域名`
+
+示例：`PROXY_URL=RP@https://123.netlify.app`
+
+这样配置后就实现了直连获取巴哈弹幕🥳另外现有的TMDB API也是支持直连的，巴哈姆特重度使用用户建议配置，配置方法详见弹幕项目的`TMDB_API_KEY`[环境变量](https://github.com/huangxd-/danmu_api#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%88%97%E8%A1%A8)部分
 
 <img width="580" height="829" alt="image" src="https://github.com/user-attachments/assets/c9e14390-0696-4a0b-b846-1f8bf7cdfafc" />
 
