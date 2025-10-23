@@ -3,26 +3,26 @@
 
 ## 目录
 
-[一键部署](#一键部署)
+[一键部署反代](#一键部署反代)
 
-[Fork后部署](#Fork（复刻）后部署（推荐）)
+[Fork后部署反代](#复刻后部署反代（推荐）)
 
-[手动创建仓库部署](#手动创建仓库部署（推荐）)
+[手动创建仓库部署反代](#手动创建仓库部署反代（推荐）)
 
 [danmu_api弹幕项目的具体使用](#danmu_api弹幕项目的具体使用)
 
 
-### 一键部署
-点击以下按钮即可将本项目快速部署到 Netlify：
+### 一键部署反代
+点击以下按钮即可将本项目快速部署到 [Netlify](https://app.netlify.com/) 实现反代：
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/wan0ge/bahamut-api-proxy"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
 > 使用一键部署时Netlify分配的是随机域名/项目名，建议部署完毕后点击“Quick setup”重新设置项目名/域名。
 > <img width="1920" height="958" alt="image" src="https://github.com/user-attachments/assets/6c9b2e47-3c65-4cdb-8586-3d3681ce0dd7" />
 
-### Fork（复刻）后部署（推荐）
+### 复刻后部署反代（推荐）
 
 
-### 手动创建仓库部署（推荐）
+### 手动创建仓库部署反代（推荐）
 1.先在github新建一个仓库
 
 <img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/d5d378f0-94cd-4807-9750-2fad0f7365ae" />
@@ -79,3 +79,8 @@ github配置部分就到此结束了，恭喜你成功创建了一个netlify.tom
 #### PROXY_URL还没有这个功能前：
 在你部署的平台找到worker.js文件，修改它将总共六个`https://api.gamer.com.tw`巴哈api地址替换为你通过netlify获取的反代后的地址
 <img width="1232" height="559" alt="image" src="https://github.com/user-attachments/assets/bfe3d79d-f0c1-40d3-af6e-a89499234f5a" />
+
+这样配置后就得到了直连获取巴哈弹幕🥳另外现有的TMDB API也是支持直连的，巴哈姆特重度使用用户建议配置
+
+<img width="580" height="829" alt="image" src="https://github.com/user-attachments/assets/c9e14390-0696-4a0b-b846-1f8bf7cdfafc" />
+
