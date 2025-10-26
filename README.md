@@ -139,13 +139,38 @@
 
 ---
 
-## 感谢：
-[Netlify大善人 通过反代获得公网IPV4？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1L9eyz9Em7/)
+## 题外话（并非
 
-[Netlify、Vercel反代网站 - AcoFork Blog](https://blog.2b2x.cn/posts/netlify-vercel-proxy/)
+### 意外报错
 
-## 公益宣传
+反代后在使用过程中有很小的概率会出现如下报错
+```
+- URL: https://123.netlify.app/......
+- 错误类型: TypeError
+- 消息: fetch failed
+- 码: undefined
+- 原因: [object Object]
+fetchBahamutEpisodeDanmu error: {
+  message: 'fetch failed',
+  name: 'TypeError',
+  stack: 'TypeError: fetch failed\n' +
+    '    at Object.processResponse (node:internal/deps/undici/undici:7188:34)\n' +
+    '    at node:internal/deps/undici/undici:7516:42\n' +
+    '    at node:internal/process/task_queues:140:7\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)\n' +
+    '    at AsyncResource.runMicrotask (node:internal/process/task_queues:137:8)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)'
+}
+```
+原因暂时不明可能是触发了反代防御措施，**只需要立即重试即可重试不会报错**，后续会针对这个报错让搜索尝试自动重试。
+
+### 公益宣传
 
 使用巴哈API的你一定很喜欢动画和弹幕，所以我要在这里给迄今为止最庞大的动画API弹弹play做个公益广告w 欢迎喜欢动画，喜欢弹幕文化的来为弹弹play~~做黑奴~~做贡献
 
 教程：[教程](https://github.com/Tony15246/uosc_danmaku?tab=readme-ov-file#%E6%9D%A5%E8%87%AA%E5%BC%B9%E5%BC%B9play%E7%9A%84%E5%BC%B9%E5%B9%95%E6%BA%90%E9%97%AE%E9%A2%98%E5%A6%82%E4%BD%95%E4%BB%8E%E6%A0%B9%E6%BA%90%E8%BF%9B%E8%A1%8C%E8%B0%83%E6%95%B4%E8%A7%A3%E5%86%B3)
+
+### 感谢：
+[Netlify大善人 通过反代获得公网IPV4？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1L9eyz9Em7/)
+
+[Netlify、Vercel反代网站 - AcoFork Blog](https://blog.2b2x.cn/posts/netlify-vercel-proxy/)
