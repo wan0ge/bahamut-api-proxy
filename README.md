@@ -36,7 +36,7 @@
 
 巴哈api为：`https://api.gamer.com.tw`
 
-> 使用方式请看：[danmu_api弹幕项目的具体使用](#danmu_api弹幕项目的具体使用)
+> 使用方式请看：[LogVar弹幕项目的具体使用方法](#LogVar弹幕项目的具体使用方法)
 
 ---
 
@@ -47,7 +47,7 @@
 > 使用一键部署时Netlify分配的是随机域名/项目名，建议部署完毕后点击“Quick setup”重新设置项目名/域名。
 > <img width="1920" height="958" alt="image" src="https://github.com/user-attachments/assets/6c9b2e47-3c65-4cdb-8586-3d3681ce0dd7" />
 
-> 使用方式请看：[danmu_api弹幕项目的具体使用](#danmu_api弹幕项目的具体使用)
+> 使用方式请看：[LogVar弹幕项目的具体使用方法](#LogVar弹幕项目的具体使用方法)
 
 ---
 
@@ -114,7 +114,7 @@
 
 <img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/2bf98c63-a37d-44e3-bb6c-c72bfd596347" />
 
-> 使用方式请看：[danmu_api弹幕项目的具体使用](#danmu_api弹幕项目的具体使用)
+> 使用方式请看：[LogVar弹幕项目的具体使用方法](#LogVar弹幕项目的具体使用方法)
 
 ---
 
