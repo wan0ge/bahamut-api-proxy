@@ -1,5 +1,5 @@
 # bahamut-api-proxy
-使用Netlify反向代理巴哈姆特api，实现[danmu_api](https://github.com/huangxd-/danmu_api)项目国内直连获取巴哈姆特弹幕，附带喂饭式教程🥰
+使用Netlify反向代理巴哈姆特api，实现[danmu_api](https://github.com/huangxd-/danmu_api)项目国内直连获取[巴哈姆特](https://ani.gamer.com.tw/)弹幕，适应国内机子/Docker部署后无法直连获取巴哈弹幕又不方便配置代理的场景，附带喂饭式教程🥰
 > 请不要过度宣传Netlify的反代功能
 ---
 
@@ -120,26 +120,17 @@
 
 ## [LogVar](https://github.com/huangxd-/danmu_api)弹幕项目的具体使用方法
 
-### 在我提pr，实现PROXY_URL环境变量的新功能后：
+### 使用PROXY_URL环境变量使用（LogVar版本>1.6.2）：
 使用`PROXY_URL`环境变量使用，值为`RP@你通过netlify获取的反代后的域名`
 
 示例：`PROXY_URL=RP@https://123.netlify.app`
 
-### PROXY_URL还没有这个功能前：
-方式一：
 
-在你部署的平台找到worker.js文件，修改它将总共六个`https://api.gamer.com.tw`巴哈api地址替换为你通过netlify获取的反代后的地址
-<img width="1232" height="559" alt="image" src="https://github.com/user-attachments/assets/bfe3d79d-f0c1-40d3-af6e-a89499234f5a" />
-
-方式二：
-
-使用我提供的[worker.js](https://github.com/wan0ge/danmu_api/blob/bahamut-Temporary/danmu_api/worker.js)、[server.js](https://github.com/wan0ge/danmu_api/blob/bahamut-Temporary/danmu_api/server.js)文件替换掉你部署平台对应的文件，然后使用`PROXY_URL`环境变量使用，值为`RP@你通过netlify获取的反代后的域名`
-
-示例：`PROXY_URL=RP@https://123.netlify.app`
-
-这样配置后就实现了直连获取巴哈弹幕🥳另外现有的TMDB API也是支持直连的，巴哈姆特重度使用用户建议配置，配置方法详见弹幕项目的`TMDB_API_KEY`[环境变量](https://github.com/huangxd-/danmu_api#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%88%97%E8%A1%A8)部分
+然后开始使用即可，恭喜你实现了直连获取巴哈弹幕🥳
 
 <img width="580" height="829" alt="image" src="https://github.com/user-attachments/assets/c9e14390-0696-4a0b-b846-1f8bf7cdfafc" />
+
+> 另外现有的TMDB API也是支持直连的，巴哈姆特重度使用用户建议配置，配置方法详见弹幕项目的`TMDB_API_KEY`[环境变量](https://github.com/huangxd-/danmu_api#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%88%97%E8%A1%A8)部分
 
 ---
 
@@ -172,9 +163,11 @@ fetchBahamutEpisodeDanmu error: {
 
 使用巴哈API的你一定很喜欢动画和弹幕，所以我要在这里给迄今为止最庞大的动画API弹弹play做个公益广告w 欢迎喜欢动画，喜欢弹幕文化的来为弹弹play~~做黑奴~~做贡献
 
-教程：[教程](https://github.com/Tony15246/uosc_danmaku?tab=readme-ov-file#%E6%9D%A5%E8%87%AA%E5%BC%B9%E5%BC%B9play%E7%9A%84%E5%BC%B9%E5%B9%95%E6%BA%90%E9%97%AE%E9%A2%98%E5%A6%82%E4%BD%95%E4%BB%8E%E6%A0%B9%E6%BA%90%E8%BF%9B%E8%A1%8C%E8%B0%83%E6%95%B4%E8%A7%A3%E5%86%B3)
+贡献教程：[教程](https://github.com/Tony15246/uosc_danmaku?tab=readme-ov-file#%E6%9D%A5%E8%87%AA%E5%BC%B9%E5%BC%B9play%E7%9A%84%E5%BC%B9%E5%B9%95%E6%BA%90%E9%97%AE%E9%A2%98%E5%A6%82%E4%BD%95%E4%BB%8E%E6%A0%B9%E6%BA%90%E8%BF%9B%E8%A1%8C%E8%B0%83%E6%95%B4%E8%A7%A3%E5%86%B3)
 
 ### 感谢：
 [Netlify大善人 通过反代获得公网IPV4？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1L9eyz9Em7/)
 
 [Netlify、Vercel反代网站 - AcoFork Blog](https://blog.2b2x.cn/posts/netlify-vercel-proxy/)
+
+[巴哈姆特動畫瘋](https://ani.gamer.com.tw/)
