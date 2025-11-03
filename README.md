@@ -43,7 +43,7 @@
 ## 一键部署反代
 点击以下按钮即可将本项目快速部署到 [Netlify](https://app.netlify.com/) 实现巴哈姆特api的反代：
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/wan0ge/bahamut-api-proxy"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/wan0ge/bahamut-api-proxy&branch=beta"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
 > 使用一键部署时Netlify分配的是随机域名/项目名，建议部署完毕后点击“Quick setup”重新设置项目名/域名。
 > <img width="1920" height="958" alt="image" src="https://github.com/user-attachments/assets/6c9b2e47-3c65-4cdb-8586-3d3681ce0dd7" />
 
