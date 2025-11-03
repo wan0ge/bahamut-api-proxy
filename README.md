@@ -3,6 +3,16 @@
 > 请不要过度宣传Netlify的反代功能
 ---
 
+> [!NOTE]
+> [beta分支](https://github.com/wan0ge/bahamut-api-proxy/tree/beta)已经支持不同路径的多个反代，实现同时反代巴哈和TMDB，有需要可以使用
+> 
+> 使用方法1：复刻的时候取消勾选`Copy the main branch only（仅复制 main 分支）`，然后在netlify部署的时候选择beta分支：
+> <img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/33ea680f-556e-44b2-a09e-a9e0af06017e" />
+> 
+> 使用方法2：使用[beta分支](https://github.com/wan0ge/bahamut-api-proxy/tree/beta)的一键部署按钮
+>
+> 使用方法3：复制[beta分支](https://github.com/wan0ge/bahamut-api-proxy/tree/beta)的netlify.toml和bahamuts.ts文件内容到自己仓库修改创建，并netlify更新部署
+
 ## 目录（点击跳转）
 
 - [前置准备](#前置准备)
