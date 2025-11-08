@@ -130,10 +130,10 @@
 
 ## [LogVar](https://github.com/huangxd-/danmu_api)弹幕项目的具体使用方法
 
-### 使用PROXY_URL环境变量使用（LogVar版本>1.6.2）：
-使用`PROXY_URL`环境变量使用，值为`RP@你通过netlify获取的反代后的域名`
+### 使用PROXY_URL环境变量使用（LogVar版本>1.6.8）：
+使用`PROXY_URL`环境变量使用，值为`bahamut@你通过netlify获取的反代后的域名`
 
-示例：`PROXY_URL=RP@https://123.netlify.app`
+示例：`PROXY_URL=bahamut@https://123.netlify.app`
 
 
 然后开始使用即可，恭喜你实现了直连获取巴哈弹幕🥳
@@ -168,6 +168,20 @@ fetchBahamutEpisodeDanmu error: {
 }
 ```
 原因暂时不明可能是触发了反代防御措施，**只需要立即重试即可重试不会报错**，后续会针对这个报错让搜索尝试自动重试。
+
+### 附赠
+
+附赠我自用的Linux/Openwrt本地部署LogVar智能更新脚本：[update_danmu_api.sh](https://github.com/wan0ge/Extract-pure-links/blob/master/image/update_danmu_api.sh)
+
+不扔给AI改动的话需要配合init.d启动文件使用不然不会更新后重启：[init.d/danmu_api](https://github.com/wan0ge/Extract-pure-links/blob/master/image/danmu_api)
+
+支持设置多个代理地址、支持钉钉Webhook推送、支持检测暂存本地修改文件并还原
+
+需要自己为脚本加定时运行，Openwrt可以使用定时任务：
+
+`0 1,13 * * * /bin/ash /root/danmu_api_web/update_danmu_api.sh`（每天凌晨1点下午13点运行一次）
+
+> 记得更改所有路径位置为你自己的路径位置，update_danmu_api.sh里面要改`PROJECT_DIR`，启动文件init.d要改`APP`
 
 ### 公益宣传
 
