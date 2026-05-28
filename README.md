@@ -4,7 +4,7 @@
 ---
 
 > [!NOTE]
-> 已支持不同路径的多个反代，默认反代了巴哈和TMDB API
+> 已支持不同路径的多个反代，默认反代了巴哈、TMDB、Bangumi (animeko 源依赖平台)  API
 > 
 > 反代后netlify显示的绿色域名（根目录）不再是可直接使用的反代地址，而是导航页展示所有可用的反代：
 > <img width="775" height="600" alt="image" src="https://github.com/user-attachments/assets/6f82282c-475f-4218-a16a-db48436d7487" />
@@ -39,7 +39,7 @@
 ---
 
 ## 适合专业宝宝的极简教程（本来就很简单）
-请看二叉树树佬博客教程：[Netlify、Vercel反代网站 - AcoFork Blog](https://blog.2b2x.cn/posts/netlify-vercel-proxy/)
+请看二叉树树佬博客教程：[Netlify、Vercel反代网站 - AcoFork Blog](https://2x.nz/posts/netlify-vercel-proxy/)
 
 巴哈api为：`https://api.gamer.com.tw`
 
