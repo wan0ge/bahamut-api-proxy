@@ -17,7 +17,7 @@ const PROXY_CONFIG = {
     targetHost: "https://api.bgm.tv",
     headerStrategy: 0, 
   },
-    "/banguminext": {
+  "/banguminext": {
     name: "Bangumi Next API（Bangumi 认证接口，一般用不到）",
     targetHost: "https://next.bgm.tv",
     headerStrategy: 0, 
