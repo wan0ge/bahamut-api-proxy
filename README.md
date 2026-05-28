@@ -4,7 +4,7 @@
 ---
 
 > [!NOTE]
-> [beta分支](https://github.com/wan0ge/bahamut-api-proxy/tree/beta)已经支持不同路径的多个反代，实现同时反代巴哈和TMDB，有需要可以使用
+> [beta分支](https://github.com/wan0ge/bahamut-api-proxy/tree/beta)已经支持不同路径的多个反代，实现同时反代 巴哈 和 TMDB 和 Bangumi (animeko 源依赖平台) API，有需要可以使用
 > 
 > 使用方法1：复刻的时候取消勾选`Copy the main branch only（仅复制 main 分支）`，然后在netlify部署的时候选择beta分支：
 > <img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/33ea680f-556e-44b2-a09e-a9e0af06017e" />
@@ -42,7 +42,7 @@
 ---
 
 ## 适合专业宝宝的极简教程（本来就很简单）
-请看二叉树树佬博客教程：[Netlify、Vercel反代网站 - AcoFork Blog](https://blog.2b2x.cn/posts/netlify-vercel-proxy/)
+请看二叉树树佬博客教程：[Netlify、Vercel反代网站 - AcoFork Blog](https://2x.nz/posts/netlify-vercel-proxy/)
 
 巴哈api为：`https://api.gamer.com.tw`
 
