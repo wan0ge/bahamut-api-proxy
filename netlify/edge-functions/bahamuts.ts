@@ -12,6 +12,16 @@ const PROXY_CONFIG = {
     targetHost: "https://api.tmdb.org",
     headerStrategy: 0, 
   },
+  "/bangumi": {
+    name: "Bangumi API（animeko 依赖平台）",
+    targetHost: "https://api.bgm.tv",
+    headerStrategy: 0, 
+  },
+    "/banguminext": {
+    name: "Bangumi Next API（Bangumi 认证接口，一般用不到）",
+    targetHost: "https://next.bgm.tv",
+    headerStrategy: 0, 
+  },
   // 后续新增路径，在此处添加即可
 };
 
