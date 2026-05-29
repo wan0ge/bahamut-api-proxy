@@ -4,7 +4,14 @@
 ---
 
 > [!NOTE]
-> 已支持不同路径的多个反代，默认反代了巴哈、TMDB、Bangumi (animeko 源依赖平台)  API
+> [beta分支](https://github.com/wan0ge/bahamut-api-proxy/tree/beta)已经支持不同路径的多个反代，实现同时反代 巴哈 和 TMDB 和 Bangumi (animeko 源依赖平台) API，有需要可以使用
+>
+> 使用方法1：复刻的时候取消勾选`Copy the main branch only（仅复制 main 分支）`，然后在netlify部署的时候选择beta分支：
+> <img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/33ea680f-556e-44b2-a09e-a9e0af06017e" />
+> 
+> 使用方法2：使用[beta分支](https://github.com/wan0ge/bahamut-api-proxy/tree/beta)的一键部署按钮
+>
+> 使用方法3：复制[beta分支](https://github.com/wan0ge/bahamut-api-proxy/tree/beta)的netlify.toml和bahamuts.ts文件内容到自己仓库修改创建，并netlify更新部署
 > 
 > 反代后netlify显示的绿色域名（根目录）不再是可直接使用的反代地址，而是导航页展示所有可用的反代：
 > <img width="775" height="600" alt="image" src="https://github.com/user-attachments/assets/6f82282c-475f-4218-a16a-db48436d7487" />
