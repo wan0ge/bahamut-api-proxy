@@ -132,12 +132,15 @@ export default async (request: Request, context: Context) => {
     const res = await fetch(newRequest);
 
     // 6. 返回响应
-    return new Response(await res.arrayBuffer(), {
+    const hasBody = res.status !== 204 && res.status !== 304;
+    const body = hasBody ? res.body : null;
+
+    return new Response(body, {
       status: res.status,
       headers: res.headers,
     });
   } catch (error) {
-    return new Response("Proxy Error", { status: 500 });
+    return new Response("Proxy Error: " + (error as Error).message, { status: 500 });
   }
 };
 
