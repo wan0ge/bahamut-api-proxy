@@ -181,17 +181,17 @@ fetchBahamutEpisodeDanmu error: {
 
 ### 附赠
 
-附赠我自用的Linux/Openwrt本地部署LogVar智能更新脚本：[update_danmu_api.sh](https://github.com/wan0ge/Extract-pure-links/blob/master/image/update_danmu_api.sh)
+附赠我自用的Linux/Openwrt本地部署项目智能更新脚本：[update_service.sh](https://github.com/wan0ge/Extract-pure-links/blob/master/image/update_service.sh)
 
 不扔给AI改动的话需要配合init.d启动文件使用不然不会更新后重启：[init.d/danmu_api](https://github.com/wan0ge/Extract-pure-links/blob/master/image/danmu_api)
 
-支持设置多个代理地址、支持钉钉Webhook推送、支持检测暂存本地修改文件并还原
+支持任意 python、node 项目，内置 Github 代理并支持设置代理、支持钉钉Webhook推送、支持检测暂存本地修改文件并还原
 
 需要自己为脚本加定时运行，Openwrt可以使用定时任务：
 
-`0 1,13 * * * /bin/ash /root/danmu_api_web/update_danmu_api.sh`（每天凌晨1点下午13点运行一次）
+`0 1 * * * /bin/ash /root/update_service/update_service.sh`（每天凌晨1点运行一次）
 
-> 记得更改所有路径位置为你自己的路径位置，update_danmu_api.sh里面要改`PROJECT_DIR`，启动文件init.d要改`APP`
+> 记得更改所有路径位置为你自己的路径位置，update_service.sh里面要改`PROJECTS_CONFIG`，启动文件init.d要改`APP`
 
 ### 公益宣传
 
